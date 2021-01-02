@@ -48,7 +48,7 @@ def reddit_scrapper():
 
 if __name__ == "__main__":
     
-    df , a =  reddit_scrapper()
+    df  =  reddit_scrapper()
  
     df.to_csv('/home/ege/selenium/r_news.csv', index=True)
 
