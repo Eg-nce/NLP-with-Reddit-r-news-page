@@ -43,12 +43,12 @@ def reddit_scrapper():
 
     news_df = pd.DataFrame(data = news_list, columns = ["r/news"] )    
    
-    return news_df , news_list
+    return news_df
 
 
 if __name__ == "__main__":
     
     df , a =  reddit_scrapper()
-    [print(x) for x in a]
+ 
     df.to_csv('/home/ege/selenium/r_news.csv', index=True)
 
